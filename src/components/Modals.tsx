@@ -695,6 +695,22 @@ git push -u origin main`;
             </ol>
           </div>
 
+          {/* Troubleshooting */}
+          <div className="bg-amber-950/30 border border-amber-500/30 p-3.5 rounded-xl space-y-1.5 text-[11.5px] text-amber-100/90">
+            <div className="font-bold text-amber-300">ডিপ্লয় না হলে দ্রুত ৩টি বিষয় চেক করুন:</div>
+            <ul className="list-disc list-inside space-y-1 text-[11px] text-slate-300">
+              <li>
+                <strong>Public Repo:</strong> ফ্রি GitHub অ্যাকাউন্টে রিপোজিটরি অবশ্যই <strong>Public</strong> হতে হবে (Private repo-তে ফ্রি GitHub Pages কাজ করে না)।
+              </li>
+              <li>
+                <strong>Actions Permission:</strong> Repo-এর <code className="bg-slate-800 px-1 rounded">Settings → Actions → General</code>-এ গিয়ে <strong>Allow all actions</strong> চালু আছে কি না দেখুন।
+              </li>
+              <li>
+                <strong>Error Log দেখা:</strong> Repo-এর <strong>Actions</strong> ট্যাবে গিয়ে লাল ❌ আইকনে ক্লিক করলে ঠিক কোন লাইনে সমস্যা হয়েছে তা দেখা যাবে।
+              </li>
+            </ul>
+          </div>
+
           {/* Step 3: Vercel alternative */}
           <div className="bg-slate-800/40 p-3 rounded-xl border border-slate-700/60 flex items-center justify-between">
             <div>
